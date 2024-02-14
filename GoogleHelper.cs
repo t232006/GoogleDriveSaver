@@ -15,17 +15,12 @@ namespace GoogleDriveManipulator
 	public class GoogleHelper
 	{
 		private readonly string token;
-		internal readonly string filename;
-		internal readonly string filepath;
 		internal DriveService driveService;
 		private UserCredential credentials;
-		//internal string FileId;
 
-		public GoogleHelper(string _token, string _filePath, string _fileName)
+		public GoogleHelper(string _token)
 		{
 			this.token = _token;
-			this.filename = _fileName;
-			this.filepath = _filePath;
 		}
 
 		public string ApplicationName { get; private set; } = "DictionaryDB";

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "scr67szWhaxJBGwU7n9OEua2zFDQq3BVhoys5MYtdPqo0bFudp6fZcaOqc1IfUmN9jZf3VX6q1Qjjj9GILubbQ==",
+  "dgSpecHash": "8t4htdi3B1aiptYThO64d+stMZfmqbU2MKLb43jvmlO9nEoUffGPyPMWBQIZTs9CL+mTiE20KlqvhkFh9YiSog==",
   "success": true,
-  "projectFilePath": "Z:\\Программирование\\repos\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation.csproj",
+  "projectFilePath": "Z:\\Программирование\\repos\\GoogleDriveSaver\\GoogleDriveManipulation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zver\\.nuget\\packages\\google.apis\\1.61.0\\google.apis.1.61.0.nupkg.sha512",
     "C:\\Users\\Zver\\.nuget\\packages\\google.apis.auth\\1.61.0\\google.apis.auth.1.61.0.nupkg.sha512",

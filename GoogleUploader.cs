@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace GoogleDriveManipulator
 {
-    public class GoogleUploader : GoogleHelper
+	public class GoogleUploader : GoogleHelper
 	{
 		public string output;
-		GoogleUploader(string _token, string _filePath, string _fileName) : base(_token, _filePath, _fileName)
+		GoogleUploader(string _token, string _filePath, string _fileName) : base(_token)
 		{
 		}
-		public static async Task<GoogleUploader> Upload(string token,string filePath, string fileName)
+		public static async Task<GoogleUploader> Upload(string token, string filePath, string fileName)
 		{
 			GoogleUploader instance = new GoogleUploader(token, filePath, fileName);
 			instance.output = "";

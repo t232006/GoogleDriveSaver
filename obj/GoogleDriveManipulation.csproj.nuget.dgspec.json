@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Программирование\\repos\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation.csproj": {}
+    "Z:\\Программирование\\repos\\GoogleDriveSaver\\GoogleDriveManipulation.csproj": {}
   },
   "projects": {
-    "Z:\\Программирование\\repos\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation.csproj": {
+    "Z:\\Программирование\\repos\\GoogleDriveSaver\\GoogleDriveManipulation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Программирование\\repos\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation.csproj",
+        "projectUniqueName": "Z:\\Программирование\\repos\\GoogleDriveSaver\\GoogleDriveManipulation.csproj",
         "projectName": "GoogleDriveManipulation",
-        "projectPath": "Z:\\Программирование\\repos\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation.csproj",
+        "projectPath": "Z:\\Программирование\\repos\\GoogleDriveSaver\\GoogleDriveManipulation.csproj",
         "packagesPath": "C:\\Users\\Zver\\.nuget\\packages\\",
-        "outputPath": "Z:\\Программирование\\repos\\GoogleDriveManipulation_core_3.0\\GoogleDriveManipulation_core_3.0\\obj\\",
+        "outputPath": "Z:\\Программирование\\repos\\GoogleDriveSaver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
