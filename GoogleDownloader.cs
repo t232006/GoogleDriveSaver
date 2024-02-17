@@ -37,12 +37,15 @@ namespace GoogleDriveManipulator
 			}
 			return instance;
 		}
-		public MemoryStream DownloadFile(string FileId)
+		public void DownloadFile(string FileId, string filename)
 		{
 			var request = driveService.Files.Get(FileId);
 			var stream = new MemoryStream();
 			request.Download(stream);
-			return stream;
+			using (FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.Write))
+			{
+				stream.WriteTo(fs);
+			}
 		}
 	}
 }
