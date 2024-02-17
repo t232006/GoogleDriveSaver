@@ -13,13 +13,13 @@ namespace GoogleDriveManipulator
 	public class GoogleDownloader : GoogleHelper
 	{
 		FileList response;
-		public Dictionary<string, string> list;
+		Dictionary<string, string> list;
 		//string output;
 		//public MemoryStream stream;
-		GoogleDownloader(string _token) : base(_token)
+		public GoogleDownloader(string _token) : base(_token)
 		{
 		}
-		public static async Task<GoogleDownloader> Download(string token)
+		public static async Task<GoogleDownloader> DownloadList(string token)
 		{
 			var instance = new GoogleDownloader(token);
 			await instance.Start();
@@ -37,16 +37,12 @@ namespace GoogleDriveManipulator
 			}
 			return instance;
 		}
-
-		public void DownloadFile(string FileId, string WhereTo)
+		public MemoryStream DownloadFile(string FileId)
 		{
 			var request = driveService.Files.Get(FileId);
 			var stream = new MemoryStream();
 			request.Download(stream);
-			using (FileStream fs = new FileStream(WhereTo, FileMode.Create, FileAccess.Write))
-			{
-				stream.WriteTo(fs);
-			}
+			return stream;
 		}
 	}
 }
