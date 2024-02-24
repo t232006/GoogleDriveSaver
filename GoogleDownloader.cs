@@ -13,7 +13,7 @@ namespace GoogleDriveManipulator
 	public class GoogleDownloader : GoogleHelper
 	{
 		FileList response;
-		Dictionary<string, string> list;
+		public Dictionary<string, string> list;
 		//string output;
 		//public MemoryStream stream;
 		public GoogleDownloader(string _token) : base(_token)
