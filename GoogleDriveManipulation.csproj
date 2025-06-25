@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>GoogleDriveManipulation_core_3._0</RootNamespace>
     <EnableComHosting>true</EnableComHosting>
 	<EnableRegFreeCom>true</EnableRegFreeCom>
@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Apis.Drive.v3" Version="1.61.0.3155" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.69.0.3783" />
   </ItemGroup>
 
 </Project>

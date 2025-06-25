@@ -24,17 +24,34 @@ namespace GoogleDriveManipulator
 			var instance = new GoogleDownloader(token);
 			await instance.Start();
 			var request = instance.driveService.Files.List();
+			request.Q = "fileExtension='db' and trashed=false";
+			request.Fields = "nextPageToken, files(id,name)";
+			request.PageSize = 100;
 			instance.response = request.Execute();
 			Dictionary<string, string> templist = new Dictionary<string, string>();
-			foreach (var file in instance.response.Files)
+			try
 			{
-				if (Path.GetExtension(file.Name) == ".db")
+				do
 				{
-					if (!templist.ContainsKey(file.Name))
-						templist.Add(file.Name, file.Id);
+					foreach (var file in instance.response.Files)
+					{
+						if (Path.GetExtension(file.Name) == ".db")
+						{
+							if (!templist.ContainsKey(file.Name))
+								templist.Add(file.Name, file.Id);
+						}
+						
+					}
+					request.PageToken = instance.response.NextPageToken;
 				}
-				instance.list = templist;
+				while (!string.IsNullOrEmpty(instance.response.NextPageToken));
 			}
+			catch(Google.GoogleApiException ex)
+			{
+				Console.WriteLine(ex.Message);
+				throw;
+			}
+			instance.list = templist;
 			return instance;
 		}
 		public void DownloadFile(string FileId, string filename)

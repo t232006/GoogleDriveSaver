@@ -1,3 +1,8 @@
 is_global = true
 build_property.RootNamespace = GoogleDriveManipulation_core_3._0
-build_property.ProjectDir = Z:\Программирование\repos\GoogleDriveSaver\
+build_property.ProjectDir = D:\Программирование\repos\GoogleDriveApplictaions\GoogleDriveSaver\
+build_property.EnableComHosting = true
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

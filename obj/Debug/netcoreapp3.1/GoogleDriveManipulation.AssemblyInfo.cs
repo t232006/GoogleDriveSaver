@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleDriveManipulation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6908faabf06837e6f9613762956a0520ea18b630")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleDriveManipulation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleDriveManipulation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
